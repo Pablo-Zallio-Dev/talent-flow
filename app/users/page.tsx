@@ -1,9 +1,9 @@
-import RegisterPage from "./RegisterPage";
+import FormsUser from "./formsUser";
 
 export default function Register(){
       return(
             <>
-            <RegisterPage />
+            <FormsUser />
             </>
       )
 }
