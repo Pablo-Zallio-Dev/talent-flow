@@ -1,11 +1,11 @@
 import { LayoutDashboard, UserRoundPen, Waypoints } from "lucide-react";
-import ButtonAccentSmall from "../../components/common/ButtonAccentSmall";
 import CardHome from "./components/CardHome";
-import Header from "../../components/header/Header";
 import CircularText from "./components/CircularText";
 import ItemFunctionHome from "./components/ItemFunctionHome";
-import Footer from "../../components/footer/Footer";
 import TextType from "./components/TextType";
+import Header from "../presentation/components/header/Header";
+import ButtonAccentSmall from "../presentation/components/common/ButtonAccentSmall";
+import Footer from "../presentation/components/footer/Footer";
 
 
 export default function LandingPage() {
