@@ -23,6 +23,7 @@ export type RecruiterPassword = {
  */
 export type Recruiter = {
   id?: string
+  name: string
   email: RecruiterEmail
   password: RecruiterPassword
 }

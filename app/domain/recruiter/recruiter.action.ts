@@ -48,9 +48,10 @@ export const makeRecruiterPassword = ({ password }: RecruiterPassword) => {
  * @param id 
  * @returns 
  */
-export const makeRecruiter = ( email: RecruiterEmail, password: RecruiterPassword, id?: string | undefined,) => {
+export const makeRecruiter = ( name: string, email: RecruiterEmail, password: RecruiterPassword, id?: string | undefined,) => {
       return {
             id: id || crypto.randomUUID(),
+            name,
             email,
             password
 
