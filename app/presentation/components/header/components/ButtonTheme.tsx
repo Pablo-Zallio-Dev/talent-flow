@@ -1,16 +1,22 @@
+import { useThemeStore } from "@/app/presentation/store/theme_store/themeStore";
 import { Moon, Sun } from "lucide-react";
-import { useState } from "react";
 
 export default function ButtonTheme() {
 
-      const [showIcon, setShowIcon] = useState(false)
-
+      const isDarkMode = useThemeStore((state) => state.isDarkMode)
+      const toggleTheme = useThemeStore((state) => state.toggleTheme)
+      
       return (
-
-            <section className=" rounded-full" onClick={() => setShowIcon(!showIcon)}>
-                  {
-                        !showIcon ? <Moon size={20} color="#F9F9F9 " /> : <Sun size={20} color="#23212a" />
-                  }
-            </section>
-      )
+            <button
+                  className="p-2 rounded-full transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer"
+                  aria-label="Cambiar tema"
+                  onClick={toggleTheme}
+            >
+                  {isDarkMode ? (
+                        <Sun size={20} color="#F9F9F9" />
+                  ) : (
+                        <Moon size={20} color="#23212a" />
+                  )}
+            </button>
+      );
 }
