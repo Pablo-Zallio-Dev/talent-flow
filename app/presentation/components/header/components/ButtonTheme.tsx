@@ -9,7 +9,7 @@ export default function ButtonTheme() {
 
             <section className=" rounded-full" onClick={() => setShowIcon(!showIcon)}>
                   {
-                        !showIcon ? <Moon size={20} color="#f9f9f9" /> : <Sun size={20} color="#23212a" />
+                        !showIcon ? <Moon size={20} color="#23212a" /> : <Sun size={20} color="#F9F9F9" />
                   }
             </section>
       )
