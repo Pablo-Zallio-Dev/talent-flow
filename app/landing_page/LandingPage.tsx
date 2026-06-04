@@ -18,7 +18,10 @@ export default function LandingPage() {
                   <main className=" flex flex-col items-center justify-center mt-12  ">
                         <h1 className=" w-11/12 sm:w-9/12 xl:w-1/2 pt-20 pb-14  font-bold text-3xl sm:text-4xl lg:text-6xl text-center lg:leading-18 "> Organiza tus candidatos de forma <span className=" text-colorAccent ">INTELIGENTE</span> </h1>
                         <p className=" w-11/12 sm:w-9/12 xl:w-1/2 pb-16 text-center text-textColorSecondary text-md sm:text-base md:text-lg  "> TalentFlow es la plataforma definitiva para reclutadores que buscan optimizar su proceso de selección con dashboards intuitivos y herramientas de gestión avanzadas. </p>
+                        <nav className="">
                         <ButtonAccentSmall text={"iniciar sesion y comienza a organizarte"} uppercase size={"small"} />
+
+                        </nav>
                         <CircularText
                               text="AÑADE-ORGANIZA-DESCANSA-"
                               onHover="speedUp"

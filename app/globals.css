@@ -47,3 +47,10 @@
 body{
       color: var(--text-color)
 }
+
+
+.bg-register {
+  background-image: url('../public/images/image_bg_register.webp'); /* Asegúrate de poner la extensión .jpg o .png */
+  background-size: cover;
+  background-position: center;
+}

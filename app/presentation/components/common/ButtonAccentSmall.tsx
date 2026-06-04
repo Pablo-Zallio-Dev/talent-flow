@@ -20,6 +20,6 @@ export type ButtonProps = {
 
 export default function ButtonAccentSmall( { icon: Icon, text, size, uppercase, pruebaFuncion}: ButtonProps ) {
       return(
-            <Link className={` flex gap-2 py-2 ${sizeStyles[size]}  rounded-md bg-colorAccent text-xs md:text-sm text-textDark ${uppercase ? ' font-semibold uppercase ' : ''} md:hover:scale-105 transition-transform duration-150 md:cursor-pointer  `} onClick={pruebaFuncion} href={""}> {Icon && <Icon size={16} color="#23212a" />} {text} </Link>
+            <Link className={` flex gap-2 py-2 ${sizeStyles[size]}  rounded-md bg-colorAccent text-xs md:text-sm text-textDark ${uppercase ? ' font-semibold uppercase ' : ''} md:hover:scale-105 transition-transform duration-150 md:cursor-pointer  `} onClick={pruebaFuncion} href={"/register"}> {Icon && <Icon size={16} color="#23212a" />} {text} </Link>
       )
 }
