@@ -1,7 +1,6 @@
 import { LayoutDashboard, UserRoundPen, Waypoints } from "lucide-react";
 import ButtonAccentSmall from "../../components/common/ButtonAccentSmall";
 import CardHome from "./components/CardHome";
-import TitleSection from "../../components/common/TitleSection";
 import Header from "../../components/header/Header";
 import CircularText from "./components/CircularText";
 import ItemFunctionHome from "./components/ItemFunctionHome";
