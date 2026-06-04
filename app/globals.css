@@ -27,17 +27,21 @@
 }
 
 @theme inline {
-  /* COLOURS */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-colorAccent: var(--color-accent);
-  --color-textColor: var(--text-color);
-  --color-textColorSecondary: var(--text-color-secondary);
-  --color-borderBtn: var(--border-btn);
-  --color-cardHome: var(--bg-card-home);
-
+      /* COLOURS */
+      --color-background: var(--background);
+      --color-foreground: var(--foreground);
+      --color-colorAccent: var(--color-accent);
+      --color-textColor: var(--text-color);
+      --color-textColorSecondary: var(--text-color-secondary);
+      --color-borderBtn: var(--border-btn);
+      --color-cardHome: var(--bg-card-home);
+      
+      --color-accentForm: #12b8b8;
   --color-textDark: #23212a;
-  
+  --color-textLight: #f9f9f9;
+  --color-backgroundRegister: #23212a;
+   
+
 
   /* FONT */
   --font-sans: var(--font-geist-sans);
