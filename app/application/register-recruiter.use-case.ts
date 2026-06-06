@@ -12,10 +12,10 @@ import { RecruiterEmail, RecruiterPassword } from "../domain/recruiter/recruiter
  * @returns 
  */
 export const registerRecruiter = (repository: RecruiterRepository) => {
-      return async ({ name, email, password }: { name:string , email: RecruiterEmail; password: RecruiterPassword }) => {
+      return async ({ name, surname, email, password }: { name:string ,surname: string , email: RecruiterEmail; password: RecruiterPassword }) => {
             const validEmail = makeRecruiterEmail(email);
             const validPassword = makeRecruiterPassword(password);
-            const newRecruiter = makeRecruiter(name, validEmail, validPassword);
+            const newRecruiter = makeRecruiter(name, surname, validEmail, validPassword);
             await repository.saveRecruiter(newRecruiter);
       };
 };

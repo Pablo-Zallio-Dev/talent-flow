@@ -2,59 +2,54 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #F9F9F9;
+  --background: #f9f9f9;
   --foreground: #23212a;
   --text-color: #23212a;
   --text-color-secondary: #26252b;
   --color-accent: #0fb6b6;
   --border-btn: #d4d4d4b3;
-  
+
   --bg-card-home: #ecebeb;
-  
-  
-  
 }
 
 .dark {
-      --background: #23212a;
-      --foreground:  #F9F9F9;
-      --color-accent: #12b8b8;
-      --text-color: #f9f9f9;
-      --text-color-secondary: #bfbfbf;
-      --border-btn: #3d3d3db3;
-      
-      --bg-card-home: #111114;
+  --background: #23212a;
+  --foreground: #f9f9f9;
+  --color-accent: #12b8b8;
+  --text-color: #f9f9f9;
+  --text-color-secondary: #bfbfbf;
+  --border-btn: #3d3d3db3;
+
+  --bg-card-home: #111114;
 }
 
 @theme inline {
-      /* COLOURS */
-      --color-background: var(--background);
-      --color-foreground: var(--foreground);
-      --color-colorAccent: var(--color-accent);
-      --color-textColor: var(--text-color);
-      --color-textColorSecondary: var(--text-color-secondary);
-      --color-borderBtn: var(--border-btn);
-      --color-cardHome: var(--bg-card-home);
-      
-      --color-accentForm: #12b8b8;
+  /* COLOURS */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-colorAccent: var(--color-accent);
+  --color-textColor: var(--text-color);
+  --color-textColorSecondary: var(--text-color-secondary);
+  --color-borderBtn: var(--border-btn);
+  --color-cardHome: var(--bg-card-home);
+  /* ----------- */
+  --color-accentForm: #12b8b8;
   --color-textDark: #23212a;
   --color-textLight: #f9f9f9;
   --color-backgroundRegister: #23212a;
-   
-
+  --color-whiteLight: #f9f9f9;
 
   /* FONT */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-body{
-      color: var(--text-color)
+body {
+  color: var(--text-color);
 }
 
-
 .bg-register {
-  background-image: url('../public/images/image_bg_register.webp'); /* Asegúrate de poner la extensión .jpg o .png */
+  background-image: url("../public/images/image_bg_register.webp"); /* Asegúrate de poner la extensión .jpg o .png */
   background-size: cover;
   background-position: center;
 }

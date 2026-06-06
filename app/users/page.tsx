@@ -1,4 +1,4 @@
-import FormsUser from "./formsUser";
+import FormsUser from "./FormsUser";
 
 export default function Register(){
       return(

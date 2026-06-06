@@ -8,18 +8,19 @@ import { RecruiterEmail, RecruiterPassword } from "./recruiter.types"
 /**
  * Expresiones Regulares
  */
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
 /**
  * Expresiones Regulares
  */
-const passRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+export const passRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
 /**
  * Funcion que intercepta el email y lo compara con la expresion regular, si es correcto pasa, sino lanza un error.
  * @param param RecruiterEmail, el objeto de valor del archivo de tipo del reclutador
  * @returns Objeto email
  */
+
 export const makeRecruiterEmail = ({ email }: RecruiterEmail) => {
       if (!emailRegex.test(email)) {
             throw new Error('El formato del email no es válido');
@@ -48,10 +49,11 @@ export const makeRecruiterPassword = ({ password }: RecruiterPassword) => {
  * @param id 
  * @returns 
  */
-export const makeRecruiter = ( name: string, email: RecruiterEmail, password: RecruiterPassword, id?: string | undefined,) => {
+export const makeRecruiter = ( name: string, surname: string, email: RecruiterEmail, password: RecruiterPassword, id?: string | undefined,) => {
       return {
             id: id || crypto.randomUUID(),
             name,
+            surname,
             email,
             password
 
