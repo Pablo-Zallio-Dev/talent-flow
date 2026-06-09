@@ -31,8 +31,9 @@ export const SupabaseRecruiterRepository = (): RecruiterRepository => {
                 
                   return makeRecruiter(
                         data.name, // Asegúrate de traer el nombre de Supabase si existe
-                        makeRecruiterEmail({ email: data.email }),
-                        makeRecruiterPassword({ password: data.password }),
+                        data.surname,
+                        makeRecruiterEmail(data.email),
+                        makeRecruiterPassword(data.password ),
                         data.id
                   )
 
