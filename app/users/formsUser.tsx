@@ -3,8 +3,8 @@ import FormUser from "./components/FormUser";
 
       export default function FormsUser(){
             return(
-                  <section className="  w-full bg-register ">
-                        <section className=" flex flex-col items-center justify-center w-full py-6 bg-backgroundRegister/70 ">
+                  <section className=" h-screen w-full bg-register ">
+                        <section className=" flex flex-col items-center justify-center h-screen w-full py-6 bg-backgroundRegister/70 ">
                               <Logo />
                               <section className=" min-h-18 ">
                               <h2 className=" pt-3 text-3xl md:text-5xl font-extrabold text-colorAccent ">TalentFlow</h2>
