@@ -1,8 +1,8 @@
       import { supabase } from "@/app/infraestructure/supabase/supabaseClient";
-      import { LoginSchema } from "@/app/schemas/RegisterRecruiterSchema";
+      import { RegisterSchema } from "@/app/schemas/RegisterRecruiterSchema";
       import z from "zod";
 
-      type LoginFormData = z.infer<typeof LoginSchema>;
+      type LoginFormData = z.infer<typeof RegisterSchema>;
 
       
 

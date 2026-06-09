@@ -1,7 +1,7 @@
 "use client";
 import { useForm } from "react-hook-form"; // Importante: 'react-hook-form', no solo 'hookform'
 import { zodResolver } from "@hookform/resolvers/zod"; // Debe llevar el @ al inicio
-import { LoginSchema } from "../../schemas/RegisterRecruiterSchema"; // Tu ruta local
+import { RegisterSchema } from "../../schemas/RegisterRecruiterSchema"; // Tu ruta local
 import ErrorForm from "@/app/presentation/components/common/ErrorForm";
 import { onSubmitRegister } from "../utilities/onSubmitRegister.function";
 import z from "zod";
@@ -24,11 +24,11 @@ export default function FormRegister() {
     getValues,
     formState: { errors, isSubmitting, isValid },
   } = useForm({
-    resolver: zodResolver(LoginSchema),
+    resolver: zodResolver(RegisterSchema),
     mode: "onChange",
   });
 
-  const onSubmit = async (data: z.infer<typeof LoginSchema>) => {
+  const onSubmit = async (data: z.infer<typeof RegisterSchema>) => {
     try {
       setErrorRegister(false);
       // 1. Limpieza explícita
@@ -189,7 +189,7 @@ export default function FormRegister() {
         )}
       {errorRegister &&
         createPortal(
-          <ErrorRegister closeModal={() => setErrorRegister(false)} />,
+          <ErrorRegister  closeModal={() => setErrorRegister(false)} />,
           document.body,
         )}
     </section>

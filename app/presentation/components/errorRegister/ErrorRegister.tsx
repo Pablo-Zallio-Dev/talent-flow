@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
 
-export default function ErrorRegister({ closeModal }: { closeModal: () => void }) {
+export default function ErrorRegister({ closeModal }: {  closeModal: () => void }) {
       return (
             <section className=" absolute top-0 left-0 flex justify-center items-center w-full h-dvh bg-backgroundRegister/50 ">
                   <section className=" flex flex-col items-center mx-4 py-3 px-10 rounded-xl bg-backgroundRegister border border-error text-whiteLight ">
@@ -9,7 +9,7 @@ export default function ErrorRegister({ closeModal }: { closeModal: () => void }
                         </section>
                         <section className=" flex flex-col gap-2 py-6  md:text-base text-center ">
                               <h2 className=" text " > Error de registro </h2>
-                              <p className=" text-xs">No hemos podido crear tu cuenta</p>
+                              <p className=" text-xs">No hemos podido registrar tu cuenta</p>
                               <p className=" text-xs max-w-90 "> Ocurrió un problema al procesar tu registro. Revisa los detalles del error y vuelve a intentarlo.</p>
                         </section>
                         <button

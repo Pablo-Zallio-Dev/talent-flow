@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { emailRegex, passRegex } from '../domain/recruiter/recruiter.action'
 
-export const LoginSchema = z.object({
+export const RegisterSchema = z.object({
       name: z.string().min(1,'El nombre es obligatorio').trim(),
       surname: z.string().min(1, 'El apellido es obligatorio').trim(),
       email: z.email().regex(emailRegex, 'Email invalido').toLowerCase(),
