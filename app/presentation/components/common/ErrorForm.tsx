@@ -2,7 +2,7 @@
 export default function ErrorForm( {error}: {error: string | undefined} ){
       return(
             <>
-                  <p className=" p-2 text-[10px] "> {error} </p>
+                  <p className=" py-2 px-1 text-xs md:text-sm text-textDark "> {error} </p>
             </>
       )
 }

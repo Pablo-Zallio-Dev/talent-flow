@@ -38,6 +38,7 @@
   --color-textLight: #f9f9f9;
   --color-backgroundRegister: #23212a;
   --color-whiteLight: #f9f9f9;
+  --color-error:  #CF2F13;
 
   /* FONT */
   --font-sans: var(--font-geist-sans);
