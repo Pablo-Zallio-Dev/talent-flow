@@ -173,7 +173,7 @@ export default function FormRegister() {
         <button
           type="submit"
           disabled={!isValid || isSubmitting}
-          className="py-2 mt-6 text-textDark bg-accentForm rounded-md disabled:text-textDark/20 transition-all disabled:hover:translate-y-0 hover:-translate-y-0.5 disabled:hover:scale-100 hover:scale-100  duration-100 "
+          className="py-2 mt-3 text-textDark bg-accentForm rounded-md disabled:text-textDark/20 transition-all disabled:hover:translate-y-0 hover:-translate-y-0.5 disabled:hover:scale-100 hover:scale-100  duration-100 "
         >
           Registrarse e iniciar
         </button>
